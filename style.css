@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal {
+    width: 25rem;
+    height: 35rem;
+    border: 4px solid silver;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+  }
+
+  .modal .title {
+    padding: 16px;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 1px solid slategray;
+  }
+
+  .main-section {
+    height: 15rem;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 7.5rem 7.5rem;
+    border-bottom: 1px solid slategray;
+  }
+
+  .password {
+    margin-top: 80px;
+  }
+
+  button {
+    margin-bottom: 80px;
+  }
+
+  .mid-section, .bottom-section {
+    padding: 20px;
+    line-height: 1.8rem;
+  }
+
+  .mid-text {
+    margin-left: 1.2rem;
+  }
+
