@@ -8,6 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: sans-serif;
   }
   
   .modal {
@@ -36,19 +37,23 @@
   }
 
   .password {
-    margin-top: 80px;
+    margin-top: 1.5rem;
   }
 
   button {
-    margin-bottom: 80px;
+    margin-bottom: 5rem;
+    margin-inline: 1rem;
+    padding: 8px 16px;
   }
 
-  .mid-section, .bottom-section {
+  .select, .check {
     padding: 20px;
     line-height: 1.8rem;
+    text-align: center;
   }
 
-  .mid-text {
+  .password-length {
+    margin-top: 2rem;
     margin-left: 1.2rem;
   }
 
