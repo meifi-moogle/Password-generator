@@ -8,6 +8,7 @@ function checkboxCheck() {          //change characters according to checkbox
         return 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     }
 }
+//commit note: made a restart when select or checkbox is changed
 
 const select = document.querySelector('#numberSelect');
 
@@ -28,8 +29,18 @@ function makePassword(length) {     //make password based on settings
 
 const copyBtn = document.querySelector('.copy-btn');
 
+const copyContent = async () => {
+  try {
+    await navigator.clipboard.writeText(password);
+    console.log('Content copied to clipboard');
+  } catch (err) {
+    console.error('Failed to copy: ', err);
+  }
+}
+
 copyBtn.addEventListener('click', function () {      //copy to clipboard
     let text = password.textContent;
+    window.focus();
     navigator.clipboard.writeText(`${text}`);
     alert('Password ready to paste!')
 })
@@ -41,4 +52,14 @@ restartBtn.addEventListener('click', () => {
 })
 
 makePassword();
+
+checkbox.addEventListener('click', () => {
+    checkboxCheck();
+    makePassword();
+})
+
+select.addEventListener('change', () => {
+    numberCheck();
+    makePassword();
+})
 
