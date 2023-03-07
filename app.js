@@ -62,4 +62,3 @@ select.addEventListener('change', () => {
     numberCheck();
     makePassword();
 })
-
