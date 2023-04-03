@@ -10,42 +10,40 @@
 </head>
 
 <body>
-
     <div class="container">
         <div class="modal">
             <div class="title">Password Generator</div>
             <div class="main-section">
                 <div class="password">Your password</div>
                 <div class="buttons">
-                <button type="submit" class="copy-btn">Copy</button>
-                <button type="submit" class="restart-btn">Restart</button>
-            </div>
-            </div>
-
-            <div class="select">
-                <div class="password-length">Password length:
-                    <select name="numberSelect" id="numberSelect">
-                        <option value="16">16</option>
-                        <option value="20" selected>20</option>
-                        <option value="25">25</option>
-                        <option value="30">30</option>
-                    </select>
-                </select></div>
-            </div>
-
-            <div class="check">
-                <div>
-                    <input type="checkbox" id="checkbox" name="special" checked>
-                    <label for="special">Special characters (~!@#$%^&*+-/...)</label>
+                    <button type="submit" class="copy-btn">Copy</button>
+                    <button type="submit" class="restart-btn">Restart</button>
                 </div>
             </div>
-           
 
+            <div class="bottom-section">
+                <div class="select">
+                    <div class="password-length">Password length:
+                        <select name="numberSelect" id="numberSelect">
+                            <option value="16">16</option>
+                            <option value="20" selected>20</option>
+                            <option value="25">25</option>
+                            <option value="30">30</option>
+                        </select>
+                        </select>
+                    </div>
+                </div>
 
+                <div class="check">
+                    <div>
+                        <input type="checkbox" id="checkbox" name="special" checked>
+                        <label for="special">Special characters (~!@#$%^&*+-/...)</label>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <script src="app.js"></script>
 </body>
-
 </html>
