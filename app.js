@@ -8,7 +8,6 @@ function checkboxCheck() {          //change characters according to checkbox
         return 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
     }
 }
-//commit note: made a restart when select or checkbox is changed
 
 const select = document.querySelector('#numberSelect');
 
